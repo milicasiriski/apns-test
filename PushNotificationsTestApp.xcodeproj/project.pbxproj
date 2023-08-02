@@ -14,6 +14,7 @@
 		1CFBC8C22A78049B00F6DA5E /* PushNotificationsTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBC8C12A78049B00F6DA5E /* PushNotificationsTestAppTests.swift */; };
 		1CFBC8CC2A78049B00F6DA5E /* PushNotificationsTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBC8CB2A78049B00F6DA5E /* PushNotificationsTestAppUITests.swift */; };
 		1CFBC8CE2A78049B00F6DA5E /* PushNotificationsTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBC8CD2A78049B00F6DA5E /* PushNotificationsTestAppUITestsLaunchTests.swift */; };
+		1CFBC8DB2A7804CE00F6DA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBC8DA2A7804CE00F6DA5E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		1CFBC8C72A78049B00F6DA5E /* PushNotificationsTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotificationsTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CFBC8CB2A78049B00F6DA5E /* PushNotificationsTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsTestAppUITests.swift; sourceTree = "<group>"; };
 		1CFBC8CD2A78049B00F6DA5E /* PushNotificationsTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CFBC8DA2A7804CE00F6DA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CFBC8DC2A7804EC00F6DA5E /* PushNotificationsTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationsTestApp.entitlements; sourceTree = "<group>"; };
+		1CFBC8DD2A7804F200F6DA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,13 @@
 		1CFBC8AF2A78049A00F6DA5E /* PushNotificationsTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				1CFBC8DD2A7804F200F6DA5E /* Info.plist */,
+				1CFBC8DC2A7804EC00F6DA5E /* PushNotificationsTestApp.entitlements */,
 				1CFBC8B02A78049A00F6DA5E /* PushNotificationsTestAppApp.swift */,
 				1CFBC8B22A78049A00F6DA5E /* ContentView.swift */,
 				1CFBC8B42A78049B00F6DA5E /* Assets.xcassets */,
 				1CFBC8B62A78049B00F6DA5E /* Preview Content */,
+				1CFBC8DA2A7804CE00F6DA5E /* AppDelegate.swift */,
 			);
 			path = PushNotificationsTestApp;
 			sourceTree = "<group>";
@@ -257,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFBC8DB2A7804CE00F6DA5E /* AppDelegate.swift in Sources */,
 				1CFBC8B32A78049A00F6DA5E /* ContentView.swift in Sources */,
 				1CFBC8B12A78049A00F6DA5E /* PushNotificationsTestAppApp.swift in Sources */,
 			);
@@ -414,12 +422,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationsTestApp/PushNotificationsTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PushNotificationsTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H65NGU53SW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushNotificationsTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,12 +453,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationsTestApp/PushNotificationsTestApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PushNotificationsTestApp/Preview Content\"";
 				DEVELOPMENT_TEAM = H65NGU53SW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushNotificationsTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

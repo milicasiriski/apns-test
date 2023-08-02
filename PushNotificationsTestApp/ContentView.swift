@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PushNotificationsTestApp
-//
-//  Created by Milica Siriski on 31.7.23..
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -13,7 +6,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, please enable push notifications")
         }
         .padding()
     }
